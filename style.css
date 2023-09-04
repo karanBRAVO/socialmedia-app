@@ -1,0 +1,68 @@
+:root {
+    --fullWidth: 100vw;
+    --fullHeight: 100vh;
+    --leftWidth: 15vw;
+    --mainHeight: 87vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 151, 199);
+    width: var(--fullWidth);
+    height: var(--fullHeight);
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainWrapper .leftContainer {
+    background-color: green;
+    width: var(--leftWidth);
+    height: var(--mainHeight);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 2px;
+    width: 90px;
+    height: 90px;
+    background-color: aquamarine;
+}
+
+.mainWrapper .mainContainer {
+    background-color: red;
+    width: calc(var(--fullWidth) - var(--leftWidth));
+    height: var(--mainHeight);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box-c {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 2px;
+}
+
+.bottomContainer {
+    width: var(--fullWidth);
+    height: calc(var(--fullHeight) - var(--mainHeight));
+    background-color: black;
+}
