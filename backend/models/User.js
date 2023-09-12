@@ -5,7 +5,6 @@ const userSchema = new mongoose.Schema({
     name: String,
     email: String,
     password: String,
-    contact: Number,
     role:{
         type: String,
         enum: ['Admin' , 'visitor']
@@ -19,10 +18,10 @@ const userSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Post'
     }],
-    story: {
+    story: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Story'
-    },
+    }],
 
 });
 
