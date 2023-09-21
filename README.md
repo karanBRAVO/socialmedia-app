@@ -6,10 +6,12 @@
 - we have focused upon both the things so that this could be one of the most advanced / addictive app.
 
 ## Our Main Goals
+
 - High Security
 - Better User Interface (UI)
 - ...
 
 ## Created Using
+
 - `React Js`, `Node Js`, `MongoDB`
 - ...

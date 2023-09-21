@@ -1,5 +1,5 @@
 import Navigation from "./navigation";
-import Logo from "../../public/vite.svg";
+import Logo from "../public/vite.svg";
 
 const Left_Box_Width = 25;
 const Left_Box_Heigth = 85;
