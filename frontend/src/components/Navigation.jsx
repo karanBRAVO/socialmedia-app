@@ -13,17 +13,7 @@ const Navigation = () => {
     <>
       <div>
         <div style={{ margin: "3px" }}>
-          <div
-            style={{
-              background: "skyblue",
-              margin: "3px",
-              padding: "5px",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-            }}
-          >
+          <div className="bg-sky-400 m-1 p-1 flex flex-col items-center justify-center">
             <div>
               <NavLink to="/signup">
                 <Button imgSrc={""} text={"Login"} />

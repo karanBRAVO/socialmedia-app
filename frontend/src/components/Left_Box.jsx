@@ -1,12 +1,12 @@
 import Navigation from "./navigation";
-import Logo from "../public/vite.svg";
+import Logo from "../../src/brand/vite.svg";
 
 const Left_Box_Width = 25;
 const Left_Box_Heigth = 85;
 
-const Left_Box = () => {
+const Left_Box = ({ tclasses }) => {
   return (
-    <>
+    <div className={tclasses}>
       <div
         style={{
           background: "red",
@@ -16,14 +16,18 @@ const Left_Box = () => {
       >
         <div>
           <div>
-            <img src={Logo} alt="Logo Image" style={{width: "50px", height: "auto", padding: "5px", margin: "5px"}} />
+            <img
+              src={Logo}
+              alt="Logo Image"
+              className="w-[50px] h-auto p-1 m-1"
+            />
           </div>
         </div>
         <div>
           <Navigation />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

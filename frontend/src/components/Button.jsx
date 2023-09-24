@@ -1,28 +1,19 @@
-function Button ({ imgSrc, text }) {
+function Button({ imgSrc, text, handleClick }) {
   return (
     <>
       <button
-        style={{
-          background: "black",
-          margin: "0 5px",
-          border: "2px solid black",
-          borderRadius: "4px",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "5px",
-        }}
+        className="bg-black m-4 border-2 border-black rounded-md flex flex-row items-center justify-center p-1"
+        onClick={handleClick}
       >
-        <div style={{ padding: "0 1px" }}>
+        <div className="p-1">
           <img src={imgSrc} alt="Btn-Image" />
         </div>
-        <div style={{ padding: "0 1px" }}>
-          <span style={{ color: "white" }}>{text}</span>
+        <div className="p-1">
+          <span className="text-white">{text}</span>
         </div>
       </button>
     </>
   );
-};
+}
 
 export default Button;
